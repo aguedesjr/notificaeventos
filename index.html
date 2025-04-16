@@ -7,11 +7,14 @@
   <title>Sistema de Notificação de Eventos</title>
   <link rel="shortcut icon" type="image/png" href="assets/images/logos/seodashlogo.png" />
   <link rel="stylesheet" href="assets/css/styles.min.css" />
-  <style>
+  <style type="text/css">
     table {
       border: 1px solid black;
       width: 100%;
     }
+    #tabela1 td.space {padding: 10px; border-collapse: collapse;}
+    #tabela2 td.black {color: black; background-color: gray; padding: 10px; border-collapse: collapse;}
+    #tabela3 td.borda {padding: 10px; border-collapse: collapse;}
     </style>
 </head>
 
@@ -57,7 +60,6 @@
     <!--  Main wrapper -->
     <div class="body-wrapper">
       <div class="container-fluid">
-
           <div class="card-body">
             <h5 class="card-title fw-semibold mb-4"></h5>
             <div class="card">
@@ -65,27 +67,37 @@
                 <img src="assets/images/logos/nursing.png" alt="" />
                 <p>&nbsp;</p>
                 <h2><u>Notificação de Eventos</u></h2>
-                <p>&nbsp;</p>
-                <h4>Informações do Paciente</h4>
+                <!--<p>&nbsp;</p>
+                <h4>Informações Iniciais</h4>-->
                 <div class="card mb-0">
                   <div class="card-body p-4">
                     <form>
+                      <table id="tabela2">
+                        <tr><td class="black">INFORMAÇÕES INICIAIS</td></tr>
+                      </table>
+                      <table id="tabela1">
+                        <tr>
+                          <td class="space">
+                            <div class="mb-3">
+                              <label for="InputNomePaciente" class="form-label">Nome do Paciente</label>
+                              <input type="nomepaciente" class="form-control" id="InputNomePaciente" aria-describedby="NomePacienteHelp">
+                              <div id="NomePacienteHelp" class="form-text">Deve ser informado o nome do paciente.</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
                       <div class="mb-3">
-                        <label for="InputNomePaciente" class="form-label">Nome do Paciente</label>
-                        <input type="nomepaciente" class="form-control" id="InputNomePaciente" aria-describedby="NomePacienteHelp">
-                        <div id="NomePacienteHelp" class="form-text">Deve ser informado o nome do paciente.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="InputNotificado" class="form-label">Notificado por</label>
-                        <table>
+                        <table id="tabela1"><tr><td class="space"><label for="InputNotificado" class="form-label">Notificado por:</label></td></tr>
+                        </table>
+                        <table id="tabela1">
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Agreção ao Colaborador / Cliente</label>
                               </div>
                             </td>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Abertura de lesão por pressão</label>
@@ -93,71 +105,120 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Broncoaspiração</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Dano por uso inadequado de equipamento</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Erro de dispensação/prescrição de medicamento</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Oferta inadequada de dieta</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Falta de material médico-hospitalar/medicamentos</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Oferta hidrica inadequada</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Administração de medicação em dose/via inadequada</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Queda</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Não administração de medicação prescrita</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Flebite</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remoção não programada de acesso venoso</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Reinternação</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remoção não programada de Cateter Vesical</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Óbito</label>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remoção não programada de Sonda Enteral</label>
                               </div>
                             </td>
+                            <td class="space">
+                              <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Outros. Qual?</label>
+                                <input type="text" class="form-control" id="checkboxQual" size="1">
+                              </div>
+                            </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="space">
                               <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Obstrução de Sonda Enteral/GTT</label>
@@ -165,20 +226,103 @@
                             </td>
                           </tr>
                         </table>
+                        <table id="tabela2">
+                          <tr><td class="black">* PREENCHER EM CASO DE FARMACOVIGILÂNCIA E TECNOVIGILÂNCIA</td></tr>
+                        </table>
+                        <table id="tabela3">
+                          <tr>
+                            <td class="borda">
+                              <div class="mb-3">
+                                <label for="InputEtiquetaProduto" class="form-label">Etiqueta do Produto:</label>
+                                <input type="etiquetaproduto" class="form-control" id="InputEtiquetaProduto">
+                              </div>
+                            </td>
+                            <td class="borda">
+                              <div class="mb-3">
+                                <label for="InputNomeProduto" class="form-label">Nome do Produto:</label>
+                                <input type="nomeproduto" class="form-control" id="InputNomeProduto">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="borda">
+                              <div class="mb-3">
+                                <label for="InputMarcaFabricante" class="form-label">Marca do Fabricante:</label>
+                                <input type="marcafabricante" class="form-control" id="InputMarcaFabricante">
+                              </div>
+                            </td>
+                            <td class="borda">
+                              <div class="mb-3">
+                                <label for="InputLote" class="form-label">Lote:</label>
+                                <input type="lote" class="form-control" id="InputLote">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="borda">
+                              <div class="mb-3">
+                                <label for="InputDataValidade" class="form-label">Data de Validade:</label>
+                                <input type="date" class="form-control" id="InputDataValidade">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                        <table id="tabela1">
+                          <tr>
+                            <td class="space">
+                              <div class="mb-3">
+                                <label for="InputNaoConformidade" class="form-label">Não conformidade encontrada:</label>
+                                <textarea id="InputNaoConformidade" name="InputNaoConformidade" class="form-control" rows="5" cols="33">  
+                                </textarea>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                        <table id="tabela2">
+                          <tr><td class="black">DESCRIÇÃO DO EVENTO</td></tr>
+                        </table>
+                        <table id="tabela1">
+                          <tr>
+                            <td class="space">
+                              <div class="mb-3">
+                                <textarea id="InputDescricaoEvento" name="InputDescricaoEvento" class="form-control" rows="5" cols="33">  
+                                </textarea>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                        <table id="tabela2">
+                          <tr><td class="black">AÇÕES IMEDIATAS (Realizadas no momento da ocorrência)</td></tr>
+                        </table>
+                        <table id="tabela1">
+                          <tr>
+                            <td class="space">
+                              <div class="mb-3">
+                                <textarea id="InputAcoesImediatas" name="InputAcoesImediatas" class="form-control" rows="5" cols="33">  
+                                </textarea>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                        <table id="tabela2">
+                          <tr><td class="black">SUGESTÕES DE MELHORIA</td></tr>
+                        </table>
+                        <table id="tabela1">
+                          <tr>
+                            <td class="space">
+                              <div class="mb-3">
+                                <textarea id="InputSugestoesMelhoria" name="InputSugestoesMelhoria" class="form-control" rows="5" cols="33">  
+                                </textarea>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
                       </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                   </div>
-                  <div class="py-6 px-6 text-center">
-                    <p class="mb-0 fs-4"><b>TODOS PACIENTES MENORES DE 18 ANOS E MAIORES DE 60 ANOS, DEVERÃO OBRIGATORIAMENTE TER ACOMPANHANTE.</b></p>
-                  </div>
               </div>
-          </div>
-        
+          </div>  
       </div>
       <div class="py-6 px-6 text-center">
         <p class="mb-0 fs-4">Design e Desenvolvido por <a href="https://www.telecad.com.br/" target="_blank"
